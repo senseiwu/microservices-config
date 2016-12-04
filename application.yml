@@ -1,0 +1,35 @@
+info:
+  description: Microservices Workshop - configuration
+  url: https://github.com/senseiwu
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://localhost:1110/eureka/
+
+---
+spring:
+  application:
+    name: Microservices Demon
+  profiles: dev
+eureka:
+  password: password00
+  instance:
+    hostname: http://localhost
+    nonSecurePort: 80
+  # client:
+  #   serviceUrl:
+  #     defaultZone: http://localhost:1112/eureka
+
+---
+spring:
+  application:
+    name: Production
+  profiles: prod
+eureka:
+  password: password1
+  instance:
+    hostname: http://localhost
+    nonSecurePort: 8010
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:3333/eureka

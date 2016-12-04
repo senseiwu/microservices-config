@@ -1,0 +1,13 @@
+---
+  spring:
+    profiles: development
+    data:
+      mongodb:
+        uri: localhost:2290
+
+---
+  spring:
+    profiles: production
+    data:
+      mongodb:
+        uri: localhost:3390

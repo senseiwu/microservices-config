@@ -1,0 +1,6 @@
+---
+  spring:
+    profiles: dev
+    data:
+      mongodb:
+        uri: localhost:6690
